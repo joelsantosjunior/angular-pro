@@ -94,6 +94,7 @@
             "tsConfig": "projects/directives/tsconfig.spec.json",
             "karmaConfig": "projects/directives/karma.conf.js",
             "inlineStyleLanguage": "scss",
+            "codeCoverage": true,
             "assets": [
               "projects/directives/src/favicon.ico",
               "projects/directives/src/assets"
