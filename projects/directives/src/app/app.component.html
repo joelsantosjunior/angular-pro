@@ -1,0 +1,29 @@
+<div class="card">
+
+  <h2 class="title">
+    Credit Card Details
+  </h2>
+  <p>Adicione os dados do seu cartão de crédito abaixo, certifique de fornecer os dados corretamente.</p>
+
+  <label class="card__label" tooltip="e.g: 1234-4321-1234-4321" #creditCardTooltip="tooltip">
+    Credit Card Number <span class="info"
+    (mouseover)="creditCardTooltip.show()"
+    (mouseout)="creditCardTooltip.hide()"
+    >(?)</span>
+    <div class="card__input">
+      <input type="text" placeholder="Enter your 16-digit card number" credit-card>
+    </div>
+  </label>
+
+  <label class="card__label" tooltip="3 digits, back of your card" #cvvTooltip="tooltip">
+    Enter your security code <span class="info"
+    (mouseover)="cvvTooltip.show()"
+    (mouseout)="cvvTooltip.hide()"
+    >(?)</span>
+    <div class="card__input">
+      <input type="text" placeholder="Enter your 3-digit CVV code" maxlength="3" minlength="3">
+    </div>
+  </label>
+
+  <button class="btn">Proceed Checkout</button>
+</div>

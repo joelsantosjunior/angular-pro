@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+$font-family: "Future";
+$input-border: 1px solid rgb(207, 207, 207);
+
+* {
+    font-family: $font-family;
+    color: #222222;
+    box-sizing: border-box;
+}
+
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 2em;
+}
+
+input {
+    height: 2.4em;
+    width: 100%;
+
+    border: none;
+    border: $input-border;
+    border-radius: 5px;
+}
+
+.tooltip-container {
+    position: relative;
+}
+
+.tooltip {
+    background-color: rgba(0, 0, 0, 0.712);
+    color: white;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: calc(100% + 1em);
+    width: max-content;
+    height: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.25s;
+    opacity: 0;
+
+    &--active {
+        opacity: 1;
+    }
+}
+
+.info {
+    color: rgb(124, 64, 180);
+}
